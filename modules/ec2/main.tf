@@ -25,7 +25,7 @@ resource "aws_security_group" "ec2_sg" {
 resource "aws_instance" "ec2_instance" {
   ami                         = var.ami_id
   instance_type               = var.instance_type
-  security_groups             = [aws_security_group.ec2_sg.name]
+  security_groups             = [aws_security_group.ec2_sg.id]
   key_name                    = var.key_name
   subnet_id                   = var.subnet_id
 

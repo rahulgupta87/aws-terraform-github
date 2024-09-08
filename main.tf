@@ -14,7 +14,7 @@ terraform {
 
 module "ec2_instance" {
   source        = "./modules/ec2"
-  ami_id        = "ami-0b947c5d5516fa06e"
+  ami_id        = "ami-0182f373e66f89c85"
   instance_type = "t2.micro"
   key_name      = "aws-terraform-github-kp"
   vpc_id        = "vpc-0a9b510042c036707"

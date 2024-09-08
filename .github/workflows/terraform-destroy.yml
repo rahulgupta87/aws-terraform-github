@@ -6,6 +6,10 @@ on:
     branches:
       - destroy-branch
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   terraform-destroy:
     name: Delete Infra in AWS
